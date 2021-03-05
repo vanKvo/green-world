@@ -1,0 +1,543 @@
+*{ box-sizing: border-box;}
+
+body {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	background: #548434;
+	border: 2px solid #3c5424;
+	padding: 10px;
+	color: white;
+}
+
+/*nav style*/
+.topnav {
+  overflow: hidden;
+  background: #548434;/*light green*/
+  border: 2px solid #3c5424;/*dark green*/
+  width: 100%;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  width: 12%;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.page-title {
+background-color:#3c5424;
+color: white;
+text-align: center;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 5px;
+padding: 10px;
+margin: 2px 0px;
+}
+
+.row {
+  display: flex; /*display as a row*/
+  flex-wrap: wrap;
+}
+
+.header-top {
+ flex-wrap: nowrap;
+}	
+.logo {
+  margin:10px 10px;
+  margin-left: 20px;
+  width: 180px;
+  height: 180px;
+}
+
+.logo-title {
+  float:right;
+  font-size: 64px;
+  margin-left: 25px;
+  color:#3c5424;
+  word-wrap: nowrap;
+}
+
+.card {
+  border: 1px solid #3c5424;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.info-box-gold {
+  background-color: #bfb26b /*gold color*/	
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;	
+  max-width: 100%;/*scale down if it has to, but never scale up to be larger than its original size, while width 100% allows scaling larger larger than its original size*/
+  height: auto;
+}	
+
+.responsive {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;	
+  max-width: 100%;/*scale down if it has to, but never scale up to be larger than its original size, while width 100% allows scaling larger larger than its original size*/
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.mt-1 {
+ margin: 0.1em 0;	
+}
+
+.link {
+	color: #3c5424;
+}
+/*the class is used to hide information from all devices and intended only for screen readers that will have trouble with web forms if we don't include a label for every input.*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+/*Align Labels and Input Fields*/
+label {
+	float: left;
+	width: 10em;
+  margin: 1em 0.5em;
+	padding-right: 1em;
+}
+
+input[type=text], input[type=email]{
+  float: left;
+  width: 15em;
+  margin-bottom: .5em;
+	padding-right: 1em;
+  padding-bottom: .5em;
+  margin-top: 1em;
+	border: 1px solid #ccc;		
+	border-radius: 4px;
+		
+}		
+
+input[type=button]:hover, button:hover  {
+  background-color: #fff;
+  border: 5px solid #548434;
+  color: #548434;
+}
+
+input[type=button]:hover, button:hover  {
+  background-color: #fff;
+  border: 5px solid #548434;
+  color: #548434;
+}
+	
+br {
+    clear: left;
+}
+
+/*Donation Form Code*/
+legend {
+	font-weight: 700;
+}	
+.theme-light-green {
+ color: #548434;/*light green*/
+}
+.theme-dark-green {
+ color: #3c5424;/*dark green*/
+}
+.form-title {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	border-right: 1px dotted #2a4f76;
+	margin-top: 19px;
+	font-size: 25px;
+	padding: 0;
+}
+.btn-dark-green {
+	font-weight: bold;
+	background-color: #3c5424;
+	color: #fff;
+	border-radius: 5px;
+	border: 0;
+	padding: 0;
+	width: 75px;
+	height: 37px;
+	margin-top: 8px;
+}
+.btn-green, .btn-green-other {
+	font-weight: bold;
+	background-color: #8ab042;
+	color: #fff;
+	border-radius: 5px;
+	border: 0;
+	padding: 0;
+	width: 114px;
+	height: 37px;
+	margin-top: 8px;
+}
+.donate-btn:hover, .submit-btn:hover{
+	background-color: #fff;
+  border: 5px solid #3c5424;
+  color: #3c5424;
+	cursor: pointer;
+}
+.form-container {
+	border: 3px solid #3c5424;
+	text-align: center;
+}
+.active {
+	background-color: #fff;
+  border: 5px solid #3c5424;
+  color: #3c5424;
+}
+#donate-form {
+	display:none;
+}
+
+#thank-you-card {
+  font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	border-right: 1px dotted #2a4f76;
+	margin-top: 19px;
+	font-size: 25px;
+}
+/*End Donation Form Code*/
+
+/*Volunteering Events Calendar*/
+table {
+    font-size: 90%;
+    width: 95%;
+    margin-bottom: 2em;
+    border-bottom: 3px solid #3c5424;
+    border-collapse: collapse;
+}
+table caption {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    color: #3c5424;
+    font-size: 160%;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: center;
+    caption-side: top;
+}
+th, td {
+    padding: 4px;
+    text-align: left;
+    border-top: 1px solid #8ab042;
+}
+th {
+    color: #FFC;
+    text-align: center;
+    border-bottom: 6px solid #3c5424;
+    background-color: #8ab042;
+}
+.date, .time, .event, .location {
+	text-align: left;
+}
+.date {
+  width: 25%;
+}
+.time {
+  width: 25%;
+}
+.event {
+  width: 30%;
+}
+.location {
+	width: 20%;
+}	
+/*End Volunteering Events Calendar*/
+[class*="col-"] {
+  padding: 15px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.col-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/*mobile code*/
+@media screen and (max-width: 480px) {
+.col-sm-1 {
+-ms-flex: 0 0 8.333333%;
+flex: 0 0 8.333333%;
+max-width: 8.333333%;
+}
+.col-sm-2 {
+-ms-flex: 0 0 16.666667%;
+flex: 0 0 16.666667%;
+max-width: 16.666667%;
+}
+.col-sm-3 {
+-ms-flex: 0 0 25%;
+flex: 0 0 25%;
+max-width: 25%;
+}
+.col-sm-4 {
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 33.333333%;
+}
+.col-sm-5 {
+-ms-flex: 0 0 41.666667%;
+flex: 0 0 41.666667%;
+max-width: 41.666667%;
+}
+.col-sm-6 {
+-ms-flex: 0 0 50%;
+flex: 0 0 50%;
+max-width: 50%;
+}
+.col-sm-7 {
+-ms-flex: 0 0 58.333333%;
+flex: 0 0 58.333333%;
+max-width: 58.333333%;
+}
+.col-sm-8 {
+-ms-flex: 0 0 66.666667%;
+flex: 0 0 66.666667%;
+max-width: 66.666667%;
+}
+.col-sm-9 {
+-ms-flex: 0 0 75%;
+flex: 0 0 75%;
+max-width: 75%;
+}
+.col-sm-10 {
+-ms-flex: 0 0 83.333333%;
+flex: 0 0 83.333333%;
+max-width: 83.333333%;
+}
+.col-sm-11 {
+-ms-flex: 0 0 91.666667%;
+flex: 0 0 91.666667%;
+max-width: 91.666667%;
+}
+.col-sm-12 {
+-ms-flex: 0 0 100%;
+flex: 0 0 100%;
+max-width: 100%;}	
+.logo-title {
+	font-size: 33px;
+	white-space: nowrap;
+	margin-left: -10px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+/* When the screen is less than 480 pixels wide, 
+hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
+.topnav a {
+ display: none;
+ width: 25%;
+}
+.topnav a.icon {
+ float: right;
+ display: block;
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */	
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+.topnav.responsive a {
+ float: none;
+ display: block;
+ text-align: left;
+ padding-left: 1em;
+}
+}
+
+/*Tablet code*/
+@media screen and (max-width: 768px) and (min-width: 481px) {
+.col-md-1 {
+-ms-flex: 0 0 8.333333%;
+flex: 0 0 8.333333%;
+max-width: 8.333333%;
+}
+.col-md-2 {
+-ms-flex: 0 0 16.666667%;
+flex: 0 0 16.666667%;
+max-width: 16.666667%;
+}
+.col-md-3 {
+-ms-flex: 0 0 25%;
+flex: 0 0 25%;
+max-width: 25%;
+}
+.col-md-4 {
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 33.333333%;
+}
+.col-md-5 {
+-ms-flex: 0 0 41.666667%;
+flex: 0 0 41.666667%;
+max-width: 41.666667%;
+}
+.col-md-6 {
+-ms-flex: 0 0 50%;
+flex: 0 0 50%;
+max-width: 50%;
+}
+.col-md-7 {
+-ms-flex: 0 0 58.333333%;
+flex: 0 0 58.333333%;
+max-width: 58.333333%;
+}
+.col-md-8 {
+-ms-flex: 0 0 66.666667%;
+flex: 0 0 66.666667%;
+max-width: 66.666667%;
+}
+.col-md-9 {
+-ms-flex: 0 0 75%;
+flex: 0 0 75%;
+max-width: 75%;
+}
+.col-md-10 {
+-ms-flex: 0 0 83.333333%;
+flex: 0 0 83.333333%;
+max-width: 83.333333%;
+}
+.col-md-11 {
+-ms-flex: 0 0 91.666667%;
+flex: 0 0 91.666667%;
+max-width: 91.666667%;
+}
+.col-md-12 {
+-ms-flex: 0 0 100%;
+flex: 0 0 100%;
+max-width: 100%;}	
+.logo {
+  width: 160px;
+  height: 160px;
+}
+.logo-title {
+ font-size: 50px;
+ word-wrap: nowrap;
+ margin-left: -10px;
+}
+.topnav a {
+  font-size: 14px;
+  width: 12%;
+}
+}

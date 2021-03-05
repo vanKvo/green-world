@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Green Project is created to promote the environement where people and nature can thrive." />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/ico" href="/assets/favicon.ico"/>
+	<title>Donation</title>
+	<link rel="stylesheet" href="green_style.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="green_project.js"></script> 
+</head>
+<body>
+	<a href="#skip" >Skip Content</a> 
+	<header>
+		<div class="row header-top">
+			<img class="logo" src="images/green_logo.jpg" alt="Green Project logo">	
+			<h1 class="logo-title col-8">Green Project</h1>
+		</div>
+		<div class="row header-bottom">
+			<div class="topnav" id="myTopnav">
+			  <a class="nav-item" href="index.html">Home</a>
+				<a class="nav-item" href="about_us.html">About Us</a>
+				<a class="nav-item" href="our_priorities.html">Our Priorities</a>
+				<a class="nav-item" href="get_involved.html">Get Involved</a>
+				<a class="nav-item" href="donation.html">Donation</a>
+				<a class="nav-item" href="events.html">Events</a>
+				<a class="nav-item" href="contact_us.html" >Contact Us</a>
+				<a class="nav-item" href="site_map.html">Site Map</a>
+			    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			    </a>
+			</div>
+		</div>
+	</header>	
+	<div class="page-title">
+	  <a id="skip"><span class="sr-only">The section after skipping content</span></a >
+		<h1>Donation</h1>
+	</div>
+	<div class="row page-content"> 
+		<div class="col-12 theme-dark-green form-title">
+			Donation Form
+		</div>
+		<div id="donate-buttons">
+				<button class="btn-green active" value='25'>$25</button>
+				<button class="btn-green" value='50'>$50</button>
+				<button class="btn-green" value='100'>$100</button>
+				<button class="btn-green" value='500'>$500</button>
+				<input class="btn-green-other" id="other-btn" type="button" value="OTHER AMOUNT" >
+				<div id="other-input" hidden>
+				 <input placeholder="$0.00" id="other-amount" value='' type="text"/>
+				</div><br/>
+				<div>
+					<button id="donate-btn" class="btn-dark-green" onclick="openForm()" hidden>DONATE</button>
+				</div>
+		</div>		
+		<section class="col-12">
+			<form id="donate-form">
+				<fieldset class="col-6 col-sm-12">
+					<legend>Your personal info</legend>
+					<label>Your Name</label>
+					<input type="text" id="name" name="name" value="" class="form-control" required></br> 
+					<label>Your email</label>
+					<input type="email" id="email" name="email" value="" class="form-control" required></br>
+					<label>Address</label>
+					<input type="text" id="address" name="address" value="" class="form-control" required></br>
+					<label>City, State, Zip Code</label>
+					<input type="text" id="city-state-zip" name="city-state-zip" value="" class="form-control" required></br>
+				</fieldset>
+				<fieldset class="col-6 col-sm-12">
+					<legend>Credit Card Information</legend>
+					<label for="card-number">Credit Card Number</label>
+					<input placeholder="1234 5678 9012 3456" pattern="[0-9]{4}[\s][0-9]{4}[\s][0-9]{4}[\s][0-9]{4}" id="credit-number" name="credit-number" value="" type="text" class="form-control card-number" id="card-number" required></br>
+					<label for="card-number">Expiration Date</label>
+					<input placeholder="MM/YY" pattern="([0-9]{2}[/]?){2}" id="exp" name="exp" value="" type="text" class="form-control card-expiration" id="card-expiration" required></br>
+					<label for="card-number">CVV Number</label>
+					<input placeholder="CVV" pattern="[0-9]{3}" id="cvv" name="cvv" value="" type="text" class="form-control card-cvv" id="card-cvv" required></br>
+					<label for="card-number">Billing Zip Code</label>
+					<input placeholder="ZIP" pattern="[0-9]{5}" ="zip" name="zip" value=""type="text" class="form-control card-zip" id="card-zip" required></br>
+				</fieldset>
+				<div>
+				 <input type="submit" id="submit-btn" name="submit" class="btn-dark-green" value="SUBMIT"/>
+			   <p id='form-alert' style="color:red;" hidden>**Please enter information for missing field(s)</p>
+				</div>
+				
+			</form>
+		</section>	
+	</div>
+	<div id="thank-you-card" class="form-container" hidden>
+		You Donated $<span id="amount"></span>. Thank You! 
+	</div>
+	<footer class="mt-1">
+		<p>&#169;This is a fictious company that certain materials are included under the fair use exemption of the U.S. 
+		Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use<p>
+	</footer>	
+</body>	
+</html>
