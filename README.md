@@ -12,4 +12,4 @@ An environmental website
 * Site Map: Provide all links in the website
 
 ### Run the website's main page
-Run the index.html with a browser 
+Download the code and run the index.html file with a browser 
