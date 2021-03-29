@@ -1,5 +1,6 @@
 # Green-world
 An environmental website
+The website's link: https://vankvo.github.io/green-world/
 
 ## Navigation bar
 * Home page: Provide an embedded animation that conveys the organization's mission
@@ -11,5 +12,4 @@ An environmental website
 * Contact Us: Show contact information with an embedded Google map
 * Site Map: Provide all links in the website
 
-### Run the website's main page
-Download the code and run the index.html file with a browser 
+
